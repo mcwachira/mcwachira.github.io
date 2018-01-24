@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>FitiSana Gym</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+   
+
+    <!-- Google Maps Settings-->
+   
+               <div id="map"></div>
+               <script>
+                 var map;
+                 function initMap() {
+                   map = new google.maps.Map(document.getElementById('map'), {
+                     center:{lat: -3.952001, lng: 39.739642},
+                   zoom: 14
+                    });
+                 }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9P_80e4iVISahAqIXC61vQar3Np-mnlw&callback=initMap"
+    async defer></script>
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <header>
+        
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-pink scrolling-navbar">
+                <a class="navbar-brand" href="index.html"><strong>FitiSana Gym</strong></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a class="nav-link" href="nutrition.html">Nutrition</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fa fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="py-3">
+            
+                  <!--Section heading-->
+                  <h2 class="font-bold text-center h1 py-5">Contact us</h2>
+                  <!--Section description-->
+                  <p class="section-description pb-4">We are located next to Moorings Restraunt  Mtwapa.</p>
+            
+                  <div class="row">
+            
+                    <!--Grid column-->
+                    <div class="col-lg-5 mb-4">
+            
+                      <!--Form with header-->
+                      <div class="card">
+            
+                        <div class="card-body">
+                          <!--Header-->
+                          <div class="form-header blue accent-1">
+                            <h3>
+                              <i class="fa fa-envelope"></i> Write to us:</h3>
+                          </div>
+            
+                          
+                          <br>
+            
+                          <!--Body-->
+                          <div class="md-form">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" id="form-name" class="form-control">
+                            <label for="form-name">Your name</label>
+                          </div>
+            
+                          <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="text" id="form-email" class="form-control">
+                            <label for="form-email">Your email</label>
+                          </div>
+            
+                          <div class="md-form">
+                            <i class="fa fa-tag prefix grey-text"></i>
+                            <input type="text" id="form-Subject" class="form-control">
+                            <label for="form-Subject">Subject</label>
+                          </div>
+            
+                          <div class="md-form">
+                            <i class="fa fa-pencil prefix grey-text"></i>
+                            <textarea type="text" id="form-text" class="md-textarea"></textarea>
+                            <label for="form-text">Message</label>
+                          </div>
+            
+                          <div class="text-center">
+                            <button class="btn btn-light-blue">Submit</button>
+                          </div>
+            
+                        </div>
+            
+                      </div>
+                      <!--Form with header-->
+            
+                    </div>
+                    <!--Grid column-->
+            
+                    <!--Grid column-->
+                    <div class="col-lg-7">
+            
+                      <!--Google map-->
+                      <div id="map-container" class="rounded z-depth-1-half map-container" style="height: 400px"></div>
+            
+                      <br>
+                      <!--Buttons-->
+                      <div class="row text-center">
+                        <div class="col-md-4">
+                          <a class="btn-floating blue accent-1">
+                            <i class="fa fa-map-marker"></i>
+                          </a>
+                          <p>Mtwapa , Kilifi</p>
+                          <p>Kenya</p>
+                        </div>
+            
+                        <div class="col-md-4">
+                          <a class="btn-floating blue accent-1">
+                            <i class="fa fa-phone"></i>
+                          </a>
+                          <p>0714327471</p>
+                          <p>Mon - Sunday, 5:30-21:00</p>
+                        </div>
+            
+                        <div class="col-md-4">
+                          <a class="btn-floating blue accent-1">
+                            <i class="fa fa-envelope"></i>
+                          </a>
+                          <p>info@gmail.com</p>
+                          <p>sale@gmail.com</p>
+                        </div>
+                      </div>
+            
+                    </div>
+                    <!--Grid column-->
+            
+                  </div>
+            
+            </section>
+            
+            <!-- FOOTER -->
+            <footer class="page-footer centr-on-small unique-color-dark pt-0">
+              
+              <div style="background-color:rgb(235, 70, 106);">
+                <div class="container">
+                  <div class="row py-4 d-flex align-items-center">
+
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-mb-0">
+                      <h5 class="mb-0 white-text">Get Connected with us on Our Social Media Pages</h5>
+                    </div>
+
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        
+                        <!-- FACEBOOK -->
+                        <a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook white-text mr-lg-4"></i></a>
+
+                        <!-- TWITTER -->
+                        <a class="icons-sm tw-ic ml-0"><i class="fa fa-twitter white-text mr-lg-4"></i></a>
+
+                        <!-- INSTAGRAM -->
+                        <a class="icons-sm ins-ic ml-0"><i class="fa fa-instargram white-text mr-lg-4"></i></a>
+
+                        <!-- YOUTUBE -->
+                        <a class="icons-sm yt-ic ml-0"><i class="fa fa-Youtube white-text mr-lg-4"></i></a>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+          <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+</body>
+
+</html>
