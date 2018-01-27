@@ -17,20 +17,26 @@
    
 
     <!-- Google Maps Settings-->
-   
-               <div id="map"></div>
-               <script>
-                 var map;
-                 function initMap() {
-                   map = new google.maps.Map(document.getElementById('map'), {
-                     center:{lat: -3.952001, lng: 39.739642},
-                   zoom: 14
-                    });
-                 }
-    </script>
+<script type="text/javascript">
+   function init () {
+      var mapOptions  = {
+        zoom:14,
+        center: new google.maps.LatLng(-3.952001,39.739642)
+      };
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9P_80e4iVISahAqIXC61vQar3Np-mnlw&callback=initMap"
-    async defer></script>
+      var map = new google.maps.Map(document.getElementById('googleMap'),
+      mapOptions);
+
+      var marker  = new google.maps.Marker({
+        position: map.getCenter(),
+        map:  map
+      });
+    }
+  </script>
+  <div id="googleMap"></div>
+    <script async defer src="AIzaSyD9P_80e4iVISahAqIXC61vQar3Np-mnlw&callback=initialize">
+
+  </script>
 </head>
 
 <body>
@@ -55,6 +61,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="store.html">Store</a>
+                      </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
@@ -180,37 +189,22 @@
                   </div>
             
             </section>
-            
-            <!-- FOOTER -->
-            <footer class="page-footer centr-on-small unique-color-dark pt-0">
-              
-              <div style="background-color:rgb(235, 70, 106);">
-                <div class="container">
-                  <div class="row py-4 d-flex align-items-center">
+                      
+<!--Footer-->
+<footer class="page-footer"style="background-color:rgb(235, 70, 106);>
+  
+      <!--Footer Links-->
+      <div class="footer-copyright">
+          <div class="container-fluid text-center">
+              © 2018 Copyright: <a href="https://www.FitiSanaGym.com"> FitiSanaGym</a>
+  
+          </div>
+      </div>
+      <!--/.Copyright-->
+  
+  </footer>
+  <!--/.Footer-->
 
-                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-mb-0">
-                      <h5 class="mb-0 white-text">Get Connected with us on Our Social Media Pages</h5>
-                    </div>
-
-                    <div class="col-md-6 col-lg-7 text-center text-md-right">
-                        
-                        <!-- FACEBOOK -->
-                        <a class="icons-sm fb-ic ml-0"><i class="fa fa-facebook white-text mr-lg-4"></i></a>
-
-                        <!-- TWITTER -->
-                        <a class="icons-sm tw-ic ml-0"><i class="fa fa-twitter white-text mr-lg-4"></i></a>
-
-                        <!-- INSTAGRAM -->
-                        <a class="icons-sm ins-ic ml-0"><i class="fa fa-instargram white-text mr-lg-4"></i></a>
-
-                        <!-- YOUTUBE -->
-                        <a class="icons-sm yt-ic ml-0"><i class="fa fa-Youtube white-text mr-lg-4"></i></a>
-                    
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
 
           <!-- SCRIPTS -->
     <!-- JQuery -->
